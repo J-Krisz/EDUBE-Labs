@@ -15,4 +15,17 @@ Your task is to write a program which:
     digits doesn't matter) outputs the Digit of Life for the date.
 """
 
+# input data
+birth_date = int(input("Enter your date of birth :"))
+
+try:
+    while birth_date > 9:
+        birth_date = sum([int(i) for i in str(birth_date)])
+    print(birth_date)
+except ValueError:
+    print("Enter digits only please")
+
+
+
+
 
